@@ -12,7 +12,11 @@ public class ItineraryModel {
     private String destination;
     private String driver;
     private Date date;
+    private String date_s;
     private int price;
+
+    public ItineraryModel() {
+    }
 
     public ItineraryModel(String departure, String destination, String driver, Date date, int price) {
         this.departure = departure;
@@ -21,6 +25,7 @@ public class ItineraryModel {
         this.date = date;
         this.price = price;
     }
+
 
     public String getDeparture() {
         return departure;
@@ -41,4 +46,6 @@ public class ItineraryModel {
     public int getPrice() {
         return price;
     }
+
+    public String getDate_s(){ return date_s; }
 }
